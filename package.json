@@ -1,0 +1,28 @@
+{
+  "name": "twfn-landing-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "formik": "^2.4.2",
+    "next": "13.4.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.0-rc.3",
+    "typescript": "5.1.3",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
+    "@types/yup": "^0.32.0",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.6"
+  }
+}
