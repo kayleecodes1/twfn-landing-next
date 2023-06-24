@@ -2,11 +2,11 @@
 
 import { useFormik } from 'formik';
 import { useState } from 'react';
-import { joinSchema } from '@app/api/join/route';
 import Button from '@components/ui/Button';
 import ConfirmationOverlay from '@components/ui/ConfirmationOverlay';
 import Form from '@components/ui/Form';
 import Input from '@components/ui/Input';
+import joinSchema from '@schemas/joinSchema';
 import * as ApiService from '@services/ApiService';
 
 const JoinForm: React.FC = () => {
