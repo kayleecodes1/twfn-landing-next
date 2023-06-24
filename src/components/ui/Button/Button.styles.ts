@@ -22,7 +22,7 @@ export const Root = styled.button<{ isLoading: boolean; variant: 'primary' | 'di
         },
         ...(isLoading && {
             color: 'rgba(255, 255, 255, 0)',
-            backgroundImage: `url(${loadingSvg})`,
+            backgroundImage: `url(${loadingSvg.src})`,
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             opacity: '1 !important',
