@@ -21,5 +21,4 @@ export const submitJoinRequest = async (data: JoinRequestData) => {
     if (response.status !== 200) {
         throw new Error(await response.json());
     }
-    return response.json();
 }

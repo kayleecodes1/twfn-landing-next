@@ -24,8 +24,12 @@ const JoinForm: React.FC = () => {
         },
         validationSchema: joinSchema,
         onSubmit: async (data) => {
-            await ApiService.submitJoinRequest(joinSchema.cast(data));
-            setIsConfirmationVisible(true);
+            try {
+                await ApiService.submitJoinRequest(joinSchema.cast(data));
+                setIsConfirmationVisible(true);
+            } catch (error) {
+                console.error(error);
+            }
         },
     });
 
